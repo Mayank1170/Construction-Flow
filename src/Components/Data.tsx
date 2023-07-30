@@ -9,11 +9,12 @@ import Value from './Value'
 
 const Heading: React.FC = () => {
     return (
-    <div className='h-[790px] w-[100%]'>
-        <div className='flex items-center ml-[4%]'>
+    <div className='h-[100%] w-[100%]'>
+        <div className='flex items-center ml-[4%] w-[100%]'>
              <h1 className="text-white text-xl mt-6 mb-3">My Company Construction Flow</h1>
         </div>
-        <div className='h-full flex flex-row w-full'>
+        <div className='h-full flex 2xl:flex-row flex-col w-[100%]'>
+          <div className='flex md:flex-row flex-col w-[100%]'>
             <div className='w-[100%] ml-[4%] mb-[2%] bg-gray-950 flex flex-col space-y-16 items-center border-r-[0.5px] border-gray-700 '>
             <div className='flex flex-row justify-between h-12 w-[100%] bg-black border-lime-600 border-l-8'>
             <div className="ml-2 text-white flex flex-row space-x-2 items-center">
@@ -95,28 +96,29 @@ const Heading: React.FC = () => {
                ))}
                
             </div>
-
+          </div>
 {/* Second end*/}
 
 {/* Middle Partition Start*/}
 
-<div className='flex w-[30%] justify-center mt-3 '>
-<div className='flex flex-col items-center  text-white text-lg space-y-3'>
+<div className='flex 2xl:w-[10%] w-[100%] 2xl:items-start 2xl:mt-3 '>
+<div className='flex w-[100%] mb-[2%] justify-center flex-row 2xl:flex-col items-center text-white text-lg 2xl:space-y-3 2xl:space-x-0 space-x-5'>
 <FaArrowDownWideShort/>
-<div className="flex flex-col  items-center space-y-9 ">
+<div className="flex 2xl:flex-col flex-row items-center justify-center 2xl:space-x-0 space-x-5 2xl:space-y-9 ">
 <BiDotsHorizontalRounded/>
 <BsBuildings/>
 </div>
-<div className='flex flex-col space-y-6'>
-<h1 className='rotate-[-90deg]'>3</h1>
-<h1 className='rotate-[-90deg] py-7'>Heading</h1>
-<h1 className='rotate-[-90deg]'>Group</h1>
+<div className='flex flex-row w-[100%] xl:w-[20%] 2xl:flex-col 2xl:space-y-4 2xl:space-x-0 space-x-2'>
+<h1 className='2xl:rotate-[-90deg]'>3</h1>
+<h1 className='2xl:rotate-[-90deg] 2xl:py-8'>Heading</h1>
+<h1 className='2xl:rotate-[-90deg]'>Group</h1>
 </div>
 </div>
 </div>
 
 {/* Middle Part End */}
 {/* Third Part Start */}
+<div className='w-[100%] flex md:flex-row flex-col'>
 <div className='w-[100%] mb-[2%] bg-gray-950 flex flex-col space-y-16 items-center border-x-[0.5px] border-gray-700 '>
             <div className='flex flex-row justify-between h-12 w-[100%] bg-black border-red-600 border-l-8'>
             <div className="ml-2 text-white flex flex-row space-x-2 items-center">
@@ -200,6 +202,7 @@ const Heading: React.FC = () => {
 
             </div>
 {/*Fourth Ends here */}
+</div>
 
     </div>
     )
